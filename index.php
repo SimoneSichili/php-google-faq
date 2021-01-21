@@ -47,24 +47,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Google Faq</title>
 </head>
 <body>
-    <?php 
-    foreach ($faq as $element) {
-    ?> 
-        <h2><?php echo $element["question"];  ?></h2>
-            
-        <?php 
-        foreach ($element["answers"] as $answer) {
-        ?>
-            <p><?php echo $answer; ?></p>
-        <?php
-        }
-        ?>
+    <header></header>
 
-    <?php
-    }
-    ?>
+    <main>
+        <div class="container">
+            <?php 
+                foreach ($faq as $element) {
+                ?> 
+                    <h2><?php echo $element["question"];  ?></h2>
+                        
+                    <?php 
+                    foreach ($element["answers"] as $answer) {
+                    ?>
+                        <p><?php echo $answer; ?></p>
+                    <?php
+                    }
+                    ?>
+
+            <?php
+            }
+            ?>
+        </div>    
+    </main>
+
+    <footer></footer>
+    
+    
 </body>
 </html>
