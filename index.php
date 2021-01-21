@@ -50,6 +50,8 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Google Faq</title>
@@ -102,7 +104,26 @@
         </div>    
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <ul>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Tutto su Google</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Termini</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <i class="fas fa-comment-alt"></i>
+                <select name="languages">
+                    <option value="it">Italiano</option>
+                    <option value="en">English</option>
+                    <option value="es">Espanol</option>
+                </select>
+            </div>
+        </div>
+    </footer>
     
     
 </body>

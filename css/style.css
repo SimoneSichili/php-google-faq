@@ -98,7 +98,7 @@ header {
 /* main */
 main {
     width: 100%;
-    padding: 195px 0;
+    padding: 195px 0 50px 0;
 }
 
 .container {
@@ -120,4 +120,62 @@ main {
 .container p {
     padding: 10px 0;
 }
+
+.container p a {
+    text-decoration: none;
+    color: #3367d6;
+}
+
+.container p a:hover {
+    text-decoration: underline;
+}
 /* main */
+
+/* footer */
+footer {
+    padding: 10px 0;
+    background-color: #f5f5f5;
+    border-top: 1px solid #eee;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left ul {
+    display: flex;
+}
+
+.footer-left ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 11px;
+}
+
+.footer-left ul li:not(:last-child)::after {
+    content: "\f111";
+    font-size: 2px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    margin-left: 10px;
+}
+
+.footer-left ul li a {
+    text-decoration: none;
+    color: #5f6368;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #3367d6;
+}
+/* footer */
